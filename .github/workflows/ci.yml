@@ -1,4 +1,3 @@
-# .github/workflows/ci.yml - Full CI/CD Pipeline
 name: CI/CD Pipeline
 
 on:

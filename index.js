@@ -18,7 +18,14 @@ app.get('/add/:a/:b', (req, res) => {
     res.json({ result: a + b });
 });
 
-// Route 4: Goodbye
+// Route 4: Multiply two numbers
+app.get('/multiply/:a/:b', (req, res) => {
+    const a = parseInt(req.params.a);
+    const b = parseInt(req.params.b);
+    res.json({ result: a * b });
+})
+
+// Route 5: Goodbye
 app.get('/goodbye', (req, res) => {
     res.json({ message: 'Goodbye! See you next time.'})
 })

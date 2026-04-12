@@ -19,6 +19,12 @@ test('GET /add/3/4 returns 7', async () => {
     expect(response.body.result).toBe(7);
 });
 
+test('GET /multiply/3/4 returns 12', async () => {
+    const response = await request(app).get('/multiply/3/4');
+    expect(response.status).toBe(200);
+    expect(response.body.result).toBe(12);
+});
+
 test('GET /goodbye', async () => {
     const response = await request(app).get('/goodbye');
     expect(response.status).toBe(200);
